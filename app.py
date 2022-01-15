@@ -1,7 +1,6 @@
 from __future__ import division, print_function
 import sys
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import glob
 import re
 import numpy as np
