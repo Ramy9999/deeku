@@ -42,7 +42,7 @@ cwd = os.getcwd()
 # model2 = load_model(model_weight2)
 # model3 = load_model(model_weight3)
 
-print('Model loaded. Check http://127.0.0.1:5000/')
+# print('Model loaded. Check http://127.0.0.1:5000/')
 
 # Predict Function
 
@@ -100,20 +100,20 @@ modelstxray = tf.keras.models.load_model('multiclassmodel')
 modelstct = tf.keras.models.load_model('multiclassmodel')
 
 
-@app.route("/", methods=['GET'])
+@app.route("/")
 def index():
     return render_template('index2.html')
 
-@app.route("/xray", methods=['GET'])
+@app.route("/xray")
 def indexseeko():
     return render_template('xrays.html')
 
-@app.route("/ct", methods=['GET'])
+@app.route("/ct")
 def indexbeeko():
     return render_template('cts.html')
 
 
-@app.route('/predict', methods=['GET','POST'])
+@app.route('/predict', methods=['POST'])
 def upload():
     if request.method == 'POST':
         img_file = request.files['file']
@@ -215,7 +215,7 @@ def upload():
 
 
 
-@app.route('/predict2', methods=['GET','POST'])
+@app.route('/predict2', methods=['POST'])
 def uploadseeko():
     if request.method == 'POST':
         img_file = request.files['file']
@@ -272,7 +272,7 @@ def uploadseeko():
     return None
 
 
-@app.route('/predict3', methods=['GET','POST'])
+@app.route('/predict3', methods=['POST'])
 def uploadbeeko():
     if request.method == 'POST':
         img_file = request.files['file']
