@@ -95,8 +95,8 @@ def import_and_predict(image_data, model):
 # modelstct = tf.keras.models.load_model('/greatCTCovid19ModelGC.h5')
 
 modelst = tf.keras.models.load_model('multiclassmodel')
-modelstxray = tf.keras.models.load_model('20211113-21011636837298-Covid19-XRayDetection-Model-Good-2 (1).h5')
-modelstct = tf.keras.models.load_model('greatCTCovid19ModelGC.h5')
+modelstxray = tf.keras.models.load_model('multiclassmodel')
+modelstct = tf.keras.models.load_model('multiclassmodel')
 
 
 @app.route("/", methods=['GET'])
