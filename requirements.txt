@@ -5,5 +5,5 @@ Werkzeug
 scipy
 gevent
 gunicorn
-Pillow
+pillow
 h5py
