@@ -31,9 +31,9 @@ app = Flask(__name__)
 #WEIGHTS = '/home/fiifi/Desktop/Lab/AI_Lab/AIDataset/brain-mri-dataset/brain_tumor_classifier/brain_tumor_predictor/models/classifier.h5'
 cwd = os.getcwd()
 
-model_weight = cwd + '/models/20211127-02161637979419-greatXrayCTMultiClassCovid19Model.h5'
-model_weight2 = cwd + '/models/20211113-21011636837298-Covid19-XRayDetection-Model-Good-2 (1).h5'
-model_weight3 = cwd + '/models/greatCTCovid19ModelGC.h5'
+# model_weight = cwd + '/models/20211127-02161637979419-greatXrayCTMultiClassCovid19Model.h5'
+# model_weight2 = cwd + '/models/20211113-21011636837298-Covid19-XRayDetection-Model-Good-2 (1).h5'
+# model_weight3 = cwd + '/models/greatCTCovid19ModelGC.h5'
 
 #print(model_weight)
 
